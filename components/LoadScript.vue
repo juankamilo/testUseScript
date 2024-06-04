@@ -10,8 +10,7 @@ declare global {
 }
 // CORS error
 const { $script } = useScript<GoogleAnalyticsApi>({
-  src: 'https://www.google-analytics.com/analytics.js',
-//   crossorigin: 'anonymous',
+  src: 'https://www.google-analytics.com/analytics.js?id=UA-52983849-1',
 }, {
   use: () => ({ gtag: window.gtag }),
 })
@@ -33,6 +32,6 @@ $script.then((analytics) => {
 </script>
 <template>
     <div>
-        test
+        Component Loaded
     </div>
 </template>

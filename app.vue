@@ -1,5 +1,5 @@
 <template>
   <div>
-    <LoadScript />
+    <NuxtPage />
   </div>
 </template>
